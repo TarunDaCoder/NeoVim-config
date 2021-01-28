@@ -25,19 +25,10 @@ Plug 'fatih/vim-go'
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 
-" Language Server Client
-Plug 'autozimu/LanguageClient-neovim', {
-\ 'branch': 'next',
-\ 'do': 'bash install.sh',
-\ }
-let g:LanguageClient_serverCommands = {
-\ 'rust': ['rust-analyzer'],
-\ }
-
-" For improved UI
-Plug 'junegunn/fzf'
-
-Plug 'rust-lang/rust.vim',         { 'for': 'rust' }
+" If you don't have nodejs and yarn
+" use pre build, add 'vim-plug' to the filetype list so vim-plug can update this plugin
+" see: https://github.com/iamcco/markdown-preview.nvim/issues/50
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 " " Plug 'sbdchd/neoformat' 
 Plug 'scrooloose/nerdtree' "d
