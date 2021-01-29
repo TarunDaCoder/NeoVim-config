@@ -7,9 +7,8 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'dense-analysis/ale'
 " -------------
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/nerd-fonts'
 " Plug 'vim-syntastic/syntastic'
 Plug 'machakann/vim-highlightedyank'
@@ -91,62 +90,52 @@ let g:sneak#prompt = '🔎 '
 
 
 " enable tabline
-"let g:airline#extensions#tabline#enabled = 1
-"let g:airline#extensions#tabline#left_sep = ''
-"let g:airline#extensions#tabline#left_alt_sep = ''
-"let g:airline#extensions#tabline#right_sep = ''
-"let g:airline#extensions#tabline#right_alt_sep = ''
-"let airline#extensions#tabline#show_splits = 0
-"let airline#extensions#tabline#tabs_label = ''
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline#extensions#tabline#right_sep = ''
+let g:airline#extensions#tabline#right_alt_sep = ''
+let airline#extensions#tabline#show_splits = 0
+let airline#extensions#tabline#tabs_label = ''
+
+set guifont=SauceCodePro\ Mono\ for\ Powerline\ 10 
 
 " enable powerline fonts
-"let g:airline_powerline_fonts = 1
-"let g:airline_left_sep = ''
-"let g:airline_right_sep = ''
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
 
 " Switch to your current theme
-"let g:airline_theme = 'onedark'
+let g:airline_theme = 'onedark'
 
-"let g:webdevicons_enable_airline_tabline = 1
+let g:webdevicons_enable_airline_tabline = 1
 
-"let g:airline#extensions#tabline#buffers_label = ''
-"let g:airline#extensions#tabline#tabs_label = ''
-"let g:airline#extensions#coc#enabled = 1
+let g:airline#extensions#tabline#buffers_label = ''
+let g:airline#extensions#tabline#tabs_label = ''
+let g:airline#extensions#coc#enabled = 1
 
 " Just show the file name
-"let g:airline#extensions#tabline#fnamemod = ':t'
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 " enable powerline fonts
-"let g:airline_powerline_fonts = 1
-"let g:airline_left_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
+let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
 
 " Always show tabs
-"set showtabline=2
+set showtabline=2
 
 " We don't need to see things like -- INSERT -- anymore
-"set noshowmode
+set noshowmode
 
 " Enable trimmming of trailing whitespace
-" let g:neoformat_basic_format_trim = 1
+let g:neoformat_basic_format_trim = 1
 
 " TAB in general mode will move to text buffer
 nnoremap <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <S-TAB> :bprevious<CR>
-
-" The lightline.vim theme
-let g:lightline = {
-      \ 'colorscheme': 'darcula',
-      \ }
-
-" Always show statusline
-set laststatus=2
-
-" Uncomment to prevent non-normal modes showing in powerline and below powerline.
-set noshowmode
-
 
 " enable line numbers
 let NERDTreeShowLineNumbers=1
@@ -212,45 +201,27 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 let g:go_def_mapping_enabled = 0
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
 
-" configure treesitter
-lua << EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = "all", -- one of "all", "maintained" (parsers with maintainers), or a list of languages
-  highlight = {
-    enable = true,              -- false will disable the whole extension
-    disable = { "c", "rust" },  -- list of language that will be disabled
-  },
-}
-EOF
+" cterm=italic
+let g:onedark_hide_endofbuffer=1
+let g:onedark_terminal_italics=1
+let g:onedark_termcolors=256
 
-" configure nvcode-color-schemes
-let g:nvcode_termcolors=256
-
-syntax on
-colorscheme nvcode " Or whatever colorscheme you make
+"syntax on
+colorscheme onedark
 
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
-    set termguicolors
-    hi LineNr ctermbg=NONE guibg=NONE
+set termguicolors
+hi LineNr ctermbg=NONE guibg=NONE
 endif
-
-10" cterm=italic
-"let g:onedark_hide_endofbuffer=1
-"let g:onedark_terminal_italics=1
-"let g:onedark_termcolors=256
-
-"syntax on
-"colorscheme onedark
-
-
-" checks if your terminal has 24-bit color support
-"if (has("termguicolors"))
-"set termguicolors
-"hi LineNr ctermbg=NONE guibg=NONE
-"endif
 
 " themes and stuff
 " colorscheme nord
@@ -308,9 +279,6 @@ au BufRead, BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " wtf is encoding
 set encoding=utf-8
-
-" set leader key
-"let g:mapleader = "\<Space>"
 
 " some boring autospacing and shit
 let python_highlight_all=1
