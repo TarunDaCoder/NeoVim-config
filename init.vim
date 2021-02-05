@@ -255,7 +255,8 @@ au BufNewFile, BufRead *.py,*.cpp,*.cs,*.go
     \ set fileformat=unix
 
 " running a file
-autocmd Filetype python nnoremap <buffer> <F6> :w<CR>:python3 "%"<CR>
+autocmd FileType python map <buffer> <F9> :w<CR>:exec '!python3' shellescape(@%, 1)<CR>
+autocmd FileType python imap <buffer> <F9> <esc>:w<CR>:exec '!python3' shellescape(@%, 1)<CR>
 
 " indentation and shit for c
 au BufNewFile, BufRead *.c
