@@ -8,6 +8,8 @@ Plug 'scrooloose/NERDTree'
 Plug 'jiangmiao/auto-pairs'
 " Themes
 Plug 'joshdick/onedark.vim'
+" Intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -15,6 +17,7 @@ call plug#end()
 source C:\Users\indra\AppData\Local\nvim\general\settings.vim
 source C:\Users\indra\AppData\Local\nvim\keys\mappings.vim 
 source C:\Users\indra\AppData\Local\nvim\themes\onedark.vim 
+source C:\Users\indra\AppData\Local\nvim\plug-config\coc.vim
 
 
 " BASIC SETUP:
