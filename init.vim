@@ -10,14 +10,20 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'joshdick/onedark.vim'
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Status Line
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Project Manager
+Plug 'mhinz/vim-startify'
 
 call plug#end()
 
 " sourcing different files
 source C:\Users\indra\AppData\Local\nvim\general\settings.vim
-source C:\Users\indra\AppData\Local\nvim\keys\mappings.vim 
-source C:\Users\indra\AppData\Local\nvim\themes\onedark.vim 
+source C:\Users\indra\AppData\Local\nvim\keys\mappings.vim
+source C:\Users\indra\AppData\Local\nvim\themes\onedark.vim
 source C:\Users\indra\AppData\Local\nvim\plug-config\coc.vim
+source C:\Users\indra\AppData\Local\nvim\themes\airline.vim
 
 
 " BASIC SETUP:
