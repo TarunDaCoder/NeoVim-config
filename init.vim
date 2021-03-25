@@ -28,12 +28,3 @@ source C:\Users\indra\AppData\Local\nvim\plug-config\coc.vim
 source C:\Users\indra\AppData\Local\nvim\themes\airline.vim
 source C:\Users\indra\AppData\Local\nvim\plug-config\start-screen.vim
 source C:\Users\indra\AppData\Local\nvim\keys\which-key.vim
-
-" BASIC SETUP:
-
-" enter the current millenium
-set nocompatible
-
-" enable syntax and plugins (for netrw)
-syntax enable
-filetype plugin on
