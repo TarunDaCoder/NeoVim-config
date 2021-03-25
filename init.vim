@@ -15,6 +15,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 " Project Manager
 Plug 'mhinz/vim-startify'
+" Whick-key
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 
@@ -24,7 +26,8 @@ source C:\Users\indra\AppData\Local\nvim\keys\mappings.vim
 source C:\Users\indra\AppData\Local\nvim\themes\onedark.vim
 source C:\Users\indra\AppData\Local\nvim\plug-config\coc.vim
 source C:\Users\indra\AppData\Local\nvim\themes\airline.vim
-
+source C:\Users\indra\AppData\Local\nvim\plug-config\start-screen.vim
+source C:\Users\indra\AppData\Local\nvim\keys\which-key.vim
 
 " BASIC SETUP:
 
