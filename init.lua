@@ -18,5 +18,5 @@ require('nvim-indentline')
 -- LSP
 require('lsp')
 
--- Which Key (Hope to replace with Lua plugin someday)
+-- Which Key
 vim.cmd('source ~/AppData/Local/nvim/vimscript/nvim-whichkey/init.vim')
