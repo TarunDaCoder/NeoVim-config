@@ -44,6 +44,14 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\galaxyline.nvim"
   },
+  ["git-blame.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\git-blame.nvim"
+  },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gitsigns.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\indent-blankline.nvim"
@@ -116,9 +124,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-code-dark"
   },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive"
+  },
   ["vim-polyglot"] = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-polyglot"
+  },
+  ["vim-rhubarb"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-rhubarb"
   },
   ["vim-vsnip"] = {
     loaded = true,

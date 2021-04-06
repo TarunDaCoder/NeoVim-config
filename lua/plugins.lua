@@ -34,4 +34,9 @@ return require('packer').startup(function()
   use 'liuchengxu/vim-which-key'
   use 'ChristianChiarulli/dashboard-nvim'
   use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+  -- use 'TimUntersberger/neogit'
+  use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
+  use 'f-person/git-blame.nvim'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
 end)
