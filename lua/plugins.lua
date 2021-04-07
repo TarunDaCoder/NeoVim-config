@@ -22,7 +22,6 @@ return require('packer').startup(function()
   use 'kyazdani42/nvim-web-devicons'
   use 'glepnir/galaxyline.nvim'
   use 'romgrk/barbar.nvim'
-  use 'tomasiser/vim-code-dark'
   use 'sheerun/vim-polyglot'
   use 'norcalli/nvim-colorizer.lua'
   use 'windwp/nvim-autopairs'
@@ -33,10 +32,21 @@ return require('packer').startup(function()
   use 'nvim-telescope/telescope-media-files.nvim'
   use 'liuchengxu/vim-which-key'
   use 'ChristianChiarulli/dashboard-nvim'
-  use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
-  -- use 'TimUntersberger/neogit'
+
+  -- Git
   use {'lewis6991/gitsigns.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use 'f-person/git-blame.nvim'
   use 'tpope/vim-fugitive'
   use 'tpope/vim-rhubarb'
+
+  -- Treesitter
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use 'p00f/nvim-ts-rainbow'
+  use {'lukas-reineke/indent-blankline.nvim', branch = 'lua'}
+  use 'nvim-treesitter/playground'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
+  use 'windwp/nvim-ts-autotag'
+
+  -- Colorscheme
+  use 'christianchiarulli/nvcode-color-schemes.vim'
 end)

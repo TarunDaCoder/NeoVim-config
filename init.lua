@@ -16,6 +16,7 @@ require('nvim-dashboard')
 require('nvim-indentline')
 require('nvim-gitsigns')
 require('nvim-gitblame')
+require('nvim-treesitter')
 
 -- LSP
 require('lsp')

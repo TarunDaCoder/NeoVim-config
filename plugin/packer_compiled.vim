@@ -64,6 +64,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\lspsaga.nvim"
   },
+  ["nvcode-color-schemes.vim"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvcode-color-schemes.vim"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-autopairs"
@@ -96,6 +100,22 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-tree.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter"
+  },
+  ["nvim-ts-autotag"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-autotag"
+  },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-context-commentstring"
+  },
+  ["nvim-ts-rainbow"] = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-ts-rainbow"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-web-devicons"
@@ -103,6 +123,10 @@ _G.packer_plugins = {
   ["packer.nvim"] = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\packer.nvim"
+  },
+  playground = {
+    loaded = true,
+    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\playground"
   },
   ["plenary.nvim"] = {
     loaded = true,
@@ -119,10 +143,6 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim"
-  },
-  ["vim-code-dark"] = {
-    loaded = true,
-    path = "C:\\Users\\indra\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-code-dark"
   },
   ["vim-fugitive"] = {
     loaded = true,
